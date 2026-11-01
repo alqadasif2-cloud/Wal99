@@ -28,7 +28,7 @@ jobs:
 
       # لا يوجد package-lock.json في المشروع (يوجد bun.lock فقط) لذلك نستخدم npm install وليس npm ci
       - name: Install dependencies
-        run: npm install --no-audit --no-fund
+        run: npm install --legacy-peer-deps --no-audit --no-fund
 
       # --base=./ يجعل المسارات نسبية فيعمل الموقع على github.io/اسم-المستودع/
       - name: Build
